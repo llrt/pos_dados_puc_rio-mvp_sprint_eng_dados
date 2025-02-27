@@ -8,3 +8,6 @@ Bases utilizadas:
 - Base pública da RFB com dados cadastrais de empresas e quadro societário (QSA)
 - Base de CNAEs do IBGE
 - Base de Municípios do IBGE
+
+
+Plataforma de dados utilizada: Databricks (Community Edition)
