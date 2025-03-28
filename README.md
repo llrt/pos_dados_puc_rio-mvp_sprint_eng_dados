@@ -26,12 +26,14 @@ Notebooks:
 - 1 - Coleta e Carga de Dados:
 > Inclui o pipeline para coleta e carga de dados crus no Spark
 > OBS: como as bases de dados da RFB vem zipadas e são muito grandes (mais de 15 GB) e o Databricks Community Edition limita o tempo máximo de processamento do cluster recém alocado, não estava sendo possível incluir todo o processo de coleta e carga no próprio notebook. A solução foi previamente baixar e dezipar localmente os dados (ver scripts *.sh neste repositório) e fazer o upload dos dados no serviço S3-like chamado [Tigris](https://www.tigrisdata.com/) . O notebook então processa os dados já inclusos nos buckets S3-like, continuando o processo a partir dali.
+
 > URL Databricks pública: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3708345446877627/362263227772676/4816729637231441/latest.html
 
 
 - 2.* - Qualidade dos Dados:
 > Inclui as análises de qualidade dos dados das bases cruas. Por questões de limitação de tamanho máximo de notebook exportável no Databricks Community Edition, esta parte foi dividida em vários notebooks, cada pedaço focando em um conjunto de bases/tabelas
  dali.
+
 > URL Databricks pública:
 > > - https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3708345446877627/859199491543184/4816729637231441/latest.html
 > > - https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3708345446877627/1219889015366514/4816729637231441/latest.html
@@ -45,11 +47,13 @@ Notebooks:
 
 - 4 - Análise dos Dados:
 > Aqui é onde se faz a análise de dados e se busca resolver as perguntas de negócio do problema posto, apresentando o raciocínio passo a passo e a conclusão final
+
 > URL Databricks pública: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3708345446877627/877524467196870/4816729637231441/latest.html
 
 
 - 5 - Autoavaliação:
 > Este último script apresenta uma autoavaliação sobre o trabalho todo, as dificuldades/desafios encontrados, sugestão de trabalhos futuros e agradecimentos
+
 > URL Databricks pública: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3708345446877627/819797422142962/4816729637231441/latest.html
 
 
@@ -66,4 +70,5 @@ Arquivos auxiliares:
 
 - \#\# Reconstruir tabelas Spark:
 > Este notebook bônus apresenta um script que pode ser utilizado para recriar tabelas Spark a partir dos arquivos delta armazenados no dbfs, contornando um problema do Databricks Community Edition onde todas as tabelas Spark (na verdade apenas seus metadados na Hive Metastore) são perdidos quando o cluster é desligado entre uma sessão e outra
+
 > URL Databricks pública: https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3708345446877627/1526718537246742/4816729637231441/latest.html
