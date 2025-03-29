@@ -2,7 +2,9 @@
 
 Projeto criado como MVP para a Sprint de Engenharia de Dados da pós de Ciência de Dados & Analytics na PUC Rio.
 
-O Projeto foca em criar uma base de dados que possa ser utilizado para pesquisas de mercado para criação de novas empresas ou lançamentos de produtos, utilizando-se como ponto de partida a base pública de empresas da RFB (QSA).
+O trabalho trata de estabelecer um problema/perguntas de negócio a serem solucionadas com dados e criar um pipeline de ETL/ELT de bases cruas para criação de uma base de dados trabalhada que possa resolver o problema/perguntas estabelecidas. As bases de dados devem ser ingeridas e consultadas a partir de um servidor serverless num provedor de cloud.  
+
+No caso específico deste projeto, busquei criar uma base de dados que possa ser utilizado para pesquisas de mercado para criação de novas empresas ou lançamentos de produtos, utilizando-se como ponto de partida a base pública de empresas da RFB (QSA).
 
 Bases utilizadas:
 - QSA - Receita Federal do Brasil (RFB):
